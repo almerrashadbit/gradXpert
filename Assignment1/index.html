@@ -26,8 +26,8 @@
           <img src="https://picsum.photos/200" class="img-thumbnail mt-3 mb-3" alt="Lorem Ipsum" height="200" width="200">
         </div>
         <div class="flex-sm-shrink col-lg-4 col-md-5 col-sm-6 col-xs-6 mx-auto">
-          <h3 class="mt-4">ALMER RASHAD</h3>
-          <p class="mb-4">Front-End Designer</p>
+          <h3 class="mt-4" id="nama_profile">ALMER RASHAD</h3>
+          <p class="mb-4" id="role_profile">Front-End Designer</p>
           <button type="button" class="btn btn-primary">Kontak</button>
           <button type="button" class="btn btn-outline-success">Resume</button>
         </div>
@@ -37,27 +37,27 @@
                   <tr>
                     <th scope="row"></th>
                     <td><b>Availability:</b></td>
-                    <td>Full Time</td>
+                    <td id="avail_profile" class="showInputProfile">Full Time</td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td><b>Usia:</b></td>
-                    <td>19</td>
+                    <td id="usia_profile" class="showInputProfile">19</td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td><b>Lokasi:</b></td>
-                    <td>Jakarta</td>
+                    <td id="lokasi_profile" class="showInputProfile">Jakarta</td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td><b>Pengalaman:</b></td>
-                    <td>2 tahun</td>
+                    <td id="pengalaman_profile" class="showInputProfile">2 tahun</td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td><b>Email:</b></td>
-                    <td>email@gmail.com</td>
+                    <td id="email_profile" class="showInputProfile">email@gmail.com</td>
                   </tr>
                 </tbody>
               </table>
@@ -73,58 +73,58 @@
     </div>
   </div>
 
-  <div class="update_profilee mt-5">
+  <div class="update_profilee mt-5" id="formInput">
     <div class="container bg-white shadow p-4 rounded-3">
         <div class="col-12 bg-white mx-auto ">
             <div class="row">
                 <div class="form-group">
-                    <label for="nama"><b>Nama</b></label>
-                    <input type="text" class="form-control" id="nama">
+                    <label for="nama" class="form-label"><b>Nama</b></label>
+                    <input type="text" class="form-control" id="nama" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="role"><b>Role</b></label>
-                    <input type="text" class="form-control" id="role">
+                    <label for="role" class="form-label"><b>Role</b></label>
+                    <input type="text" class="form-control" id="role" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="availability"><b>Availability</b></label>
-                    <input type="text" class="form-control" id="availability">
+                    <label for="availability" class="form-label"><b>Availability</b></label>
+                    <input type="text" class="form-control" id="availability" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="usia"><b>Usia</b></label>
-                    <input type="text" class="form-control" id="usia">
+                    <label for="usia" class="form-label"><b>Usia</b></label>
+                    <input type="text" class="form-control" id="usia" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="lokasi"><b>Lokasi</b></label>
-                    <input type="text" class="form-control" id="lokasi">
+                    <label for="lokasi" class="form-label"><b>Lokasi</b></label>
+                    <input type="text" class="form-control" id="lokasi" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="yearsexp"><b>Years Experience</b></label>
-                    <input type="text" class="form-control" id="yearsexp">
+                    <label for="yearsexp" class="form-label"><b>Years Experience</b></label>
+                    <input type="text" class="form-control" id="yearsexp" required>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group">
-                    <label for="exampleInputEmail1"><b>Email address</b></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="form-group" class="form-label">
+                    <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                   </div>
             </div>
             <div class="row mt-4">
-                <button type="button" class="btn btn-success">SUBMIT</button>
-
+                <button type="button" class="btn btn-success" onclick="updateFunction()">SUBMIT</button>
             </div>
+      </div>
     </div>
-
-</div>
+  </div>
+<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
